@@ -62,7 +62,7 @@ export const educationData = [
 ];
 
 export const skillData = {
-    title: 'Proessional Skillset',
+    title: 'Technical Skillset',
     skills: [
         `ReactJs`,
         `Javascript`,
@@ -74,6 +74,7 @@ export const skillData = {
         `TailwindCSS`,
         `Bootstrap`,
         `Tanstack Query`,
+        `React Testing Library`,
     ],
 };
 

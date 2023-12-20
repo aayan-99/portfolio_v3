@@ -13,7 +13,7 @@ const ResumePage = () => {
                     <span className="w-4 h-4 mt-[3px] bg-[color:var(--secondary-color)]"></span>
                     <h1 className="text-[26px] lg:text-[30px] font-[700]">Resume</h1>
                 </span>
-                <div className="w-full max-w-[800px]">
+                <div className="w-full max-w-[1000px]">
                     <div className="w-full flex justify-between items-center">
                         <h1 className="text-[20px] lg:text-[24px] font-[700] tracking-[0px]">Experience</h1>
                         <a href={resume} download="Aayanjit's Resume" target='_blank' rel="noopener noreferrer">
@@ -28,7 +28,7 @@ const ResumePage = () => {
                         ))
                     }
                 </div>
-                <div className="w-full max-w-[800px]">
+                <div className="w-full max-w-[1000px]">
                     <div className="w-full flex justify-between items-center">
                         <h1 className="text-[20px] lg:text-[24px] font-[700] tracking-[0px]">Education</h1>
                     </div>
@@ -40,7 +40,7 @@ const ResumePage = () => {
                         ))
                     }
                 </div>
-                <div className="w-full max-w-[800px]">
+                <div className="w-full max-w-[1000px]">
                     <div className="w-full flex justify-between items-center">
                         <h1 className="text-[20px] lg:text-[24px] font-[700] tracking-[0px]">Skills</h1>
                     </div>

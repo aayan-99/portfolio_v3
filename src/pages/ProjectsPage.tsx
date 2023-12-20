@@ -13,7 +13,7 @@ const ProjectsPage = () => {
                     <div className='w-full flex flex-col gap-14 md:px-5'>
                         {
                             projectsData?.map((project) => (
-                                <ProjectCard key={project?.id} name={project?.title} stack={project?.stack} desc={project?.desc} image={project?.image} type={project?.type} />
+                                <ProjectCard key={project?.id} id={project?.id} name={project?.title} stack={project?.stack} desc={project?.desc} image={project?.image} type={project?.type} />
                             ))
                         }
                     </div>

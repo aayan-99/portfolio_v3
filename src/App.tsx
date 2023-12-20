@@ -8,6 +8,7 @@ import ResumePage from './pages/ResumePage'
 import ProjectsPage from './pages/ProjectsPage'
 import AllBlogsPage from './pages/AllBlogsPage'
 import SingleBlogPage from './pages/SingleBlogPage'
+import SingleProjectPage from './pages/SingleProjectPage'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/' element={<LandingPage />} />
           <Route path='/resume' element={<ResumePage />} />
           <Route path='/projects' element={<ProjectsPage />} />
+          <Route path='/projects/:id' element={<SingleProjectPage />} />
           <Route path='/contact' element={<ContactPage />} />
           <Route path='/all-blogs' element={<AllBlogsPage />} />
           <Route path='/all-blogs/:id' element={<SingleBlogPage />} />

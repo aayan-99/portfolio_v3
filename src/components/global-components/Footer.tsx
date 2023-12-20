@@ -23,11 +23,11 @@ const Footer = () => {
                                         contactData?.links?.map((linkData) => {
                                             if (contactData?.id !== 2) {
                                                 return (
-                                                    <h1 className='text-[12px] font-[400] mt-[1px]'>{linkData?.link}</h1>
+                                                    <h1 className='text-[12px] font-[400] mt-[1px]' key={linkData?.id}>{linkData?.link}</h1>
                                                 )
                                             } else {
                                                 return (
-                                                    <a href={linkData?.link} target='blank' className='mt-[2px]'>
+                                                    <a href={linkData?.link} key={linkData?.id} target='blank' className='mt-[2px]'>
                                                         <img src={linkData?.id === 'github' ? github : linkData?.id === 'linkedin' ? linkedin : linkData?.id === 'instagram' ? instagram : ''} className='w-[18px]' alt="" />
                                                     </a>
                                                 )
@@ -53,11 +53,11 @@ const Footer = () => {
                                         contactData?.links?.map((linkData) => {
                                             if (contactData?.id !== 2) {
                                                 return (
-                                                    <h1 className='text-[14px] font-[400] mt-[1px]'>{linkData?.link}</h1>
+                                                    <h1 className='text-[14px] font-[400] mt-[1px]' key={linkData?.id}>{linkData?.link}</h1>
                                                 )
                                             } else {
                                                 return (
-                                                    <a href={linkData?.link} target='blank' className='mt-[2px]'>
+                                                    <a href={linkData?.link} key={linkData?.id} target='blank' className='mt-[2px]'>
                                                         <img src={linkData?.id === 'github' ? github : linkData?.id === 'linkedin' ? linkedin : linkData?.id === 'instagram' ? instagram : ''} className='w-[19px]' alt="" />
                                                     </a>
                                                 )

@@ -45,7 +45,7 @@ const ContactForm = () => {
                 <textarea rows={4} className='w-full bg-transparent px-3 py-2 outline-none border-b-2 border-gray-700' />
             </div>
             <div className='w-full flex justify-between mt-8 relative'>
-                <PrimaryButton btnText="SAVE" />
+                <PrimaryButton btnText="SEND" />
             </div>
         </form>
     )

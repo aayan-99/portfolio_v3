@@ -10,7 +10,7 @@ const LandingPage = () => {
     const { greeting, welcomeText, aboutMe, aboutMe_2 } = LandingPageData;
 
     return (
-        <div className={`flex flex-col md:flex-row md:h-[88vh]`}>
+        <div className={`flex flex-col md:flex-row md:h-[76vh]`}>
             <div className="w-full md:w-[40%] h-[30vh] md:h-full md:bg-[color:var(--primary-color)] relative">
                 <div className="block md:hidden w-full max-w-[350px] absolute right-[3%] sm:top-[10%]">
                     <PhotoCard {...photoCardData} />
