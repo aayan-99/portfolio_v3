@@ -2,7 +2,7 @@
 
 This is my portfolio showcasing my work, my experience, my skills and some informative content.
 
-<!-- ## [Demo Link](https://nukemusix.vercel.app/) 🔗 -->
+## [Demo Link](https://portfolio-aayan.vercel.app/) 🔗
 
 ## Technologies used 🛠️
 
@@ -18,10 +18,10 @@ From your command line, first clone this repo:
 ```bash
 
 # Clone this repository
-$ git clone https://github.com/aayan-99/Netflix-Clone
+$ git clone https://github.com/aayan-99/portfolio_v3.git
 
 # Go into the repository
-$ cd Netflix-Clone
+$ cd portfolio_v3
 
 # Remove current origin repository
 $ git remote remove origin
@@ -41,7 +41,7 @@ $ npm install
 
 ## Author 👨‍💻
 
-- **Aayanjit Bhuyan** - **[Linkedin](https://www.linkedin.com/in/aayanjit-bhuyan-b48705195/)**, **[Github](https://github.com/aayan-99)**, **[Portfolio](https://portfolio-v1-teal.vercel.app/)**
+- **Aayanjit Bhuyan** - **[Linkedin](https://www.linkedin.com/in/aayanjit-bhuyan-b48705195/)**, **[Github](https://github.com/aayan-99)**, **[Portfolio](https://portfolio-aayan.vercel.app/)**
 
 <br>
 
