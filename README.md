@@ -1,4 +1,4 @@
-# Spotify Clone/ Music App
+# Portfolio
 
 This is my portfolio showcasing my work, my experience, my skills and some informative content.
 
