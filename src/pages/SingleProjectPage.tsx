@@ -118,7 +118,7 @@ const SingleProjectPage = () => {
                         <h1 className='font-[700] text-[23px] md:text-[30px] mb-20 underline'>{projectData?.responsive?.title}</h1>
                         <div className='w-full flex flex-col md:flex-row justify-center gap-10 md:gap-20 mb-20'>
                             {
-                                projectData?.responsive?.content?.map((data, i) => (
+                                projectData?.responsive?.content?.map((data, ) => (
                                     <div key={data?.id} className='w-fit'>
                                         <img src={data?.image} className='w-fit' alt="" />
                                     </div>
