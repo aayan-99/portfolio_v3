@@ -3,6 +3,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import back from '../assets/icons/back.svg'
 import { projectDetails } from '../mockapi/projectpageapi';
 import { SingleProjectProps } from '../types/projectmodel';
+import { motion } from "framer-motion";
+import { pageTransitions } from '../utils/framerAnimationsConstants';
 
 const SingleProjectPage = () => {
 
@@ -39,6 +41,8 @@ const SingleProjectPage = () => {
         },
     });
 
+    const { initial, animate, transition } = pageTransitions;
+
     useEffect(() => {
         projectDetails?.map((project) => {
             if (project?.id == params?.id) {
@@ -47,22 +51,17 @@ const SingleProjectPage = () => {
         })
     }, []);
 
-    useEffect(() => {
-        console.log(projectData)
-    }, [projectData])
-
 
     return (
-        <div className='w-full py-16 md:py-[120px] bg-[color:var(--primary-color)] flex flex-col justify-center items-center'>
+        <motion.div initial={{ opacity: initial }} animate={{ opacity: animate }} transition={{ duration: transition }}  className='w-full py-16 md:py-[120px] bg-[color:var(--primary-color)] flex flex-col justify-center items-center mt-20'>
             <div className='w-full flex justify-normal items-center mb-14'>
                 <p className='ml-10'><img src={back} className='w-[30px] cursor-pointer' onClick={() => navigate(-1)} alt="" /></p>
             </div>
             <div className='w-full flex flex-col justify-center items-center px-5 md:px-0'>
-                <span className="flex justify-center items-center gap-2 mb-[40px] lg:mb-[120px]">
+                <span className="flex justify-center items-center gap-2 mb-[40px] lg:mb-[50px]">
                     <span className="hidden 2xl:block w-4 h-4 mt-[3px] bg-[color:var(--secondary-color)]"></span>
                     <h1 className="text-[26px] lg:text-[38px] text-center font-[700] underline">{projectData?.title}</h1>
                 </span>
-                {/* <h1 className='text-[35px] underline font-[700] mb-14'>{projectData?.title}</h1> */}
                 <div className="w-full max-w-[80vw] flex flex-col">
                     <img src={projectData?.image_1} className='w-full my-[30px] md:my-[100px]' alt="" />
                     <div className='w-full flex flex-col mt-10 md:mt-0'>
@@ -138,7 +137,7 @@ const SingleProjectPage = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

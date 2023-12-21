@@ -3,6 +3,7 @@ import PrimaryButton from '../components/global-components/PrimaryButton';
 import SecondaryButton from '../components/global-components/SecondaryButton';
 import { LandingPageData, photoCardData } from '../mockapi/landingpageapi';
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
 
 
 const LandingPage = () => {
@@ -10,7 +11,7 @@ const LandingPage = () => {
     const { greeting, welcomeText, aboutMe, aboutMe_2 } = LandingPageData;
 
     return (
-        <div className={`flex flex-col md:flex-row md:h-[76vh]`}>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }} className={`flex flex-col md:flex-row md:h-screen pt-16 mt-16 md:mt-0 md:pt-24`}>
             <div className="w-full md:w-[40%] h-[30vh] md:h-full md:bg-[color:var(--primary-color)] relative">
                 <div className="block md:hidden w-full max-w-[350px] absolute right-[3%] sm:top-[10%]">
                     <PhotoCard {...photoCardData} />
@@ -35,7 +36,7 @@ const LandingPage = () => {
                     <h1 className="text-[16px] font-[400]">{aboutMe_2}</h1>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

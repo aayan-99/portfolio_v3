@@ -3,6 +3,8 @@ import { Squeeze as Hamburger } from 'hamburger-react'
 import { useRecoilState } from "recoil";
 import sidebarToggleAtom from "../../atoms/sidebarToggleAtom";
 import { navData } from "../../mockapi/navbarapi";
+import { motion } from "framer-motion";
+import { pageTransitions } from "../../utils/framerAnimationsConstants";
 
 const Navbar = () => {
 
@@ -10,11 +12,13 @@ const Navbar = () => {
 
     const location = useLocation();
 
+    const { initial, animate, transition } = pageTransitions;
+
     return (
         <div className="w-full relative">
 
             {/* desktop navbar */}
-            <div className="hidden md:flex w-full justify-between items-center fixed z-[200] bg-[color:var(--cream-color)] top-0 p-10">
+            <motion.div initial={{ opacity: initial }} animate={{ opacity: animate }} transition={{ duration: transition }} className="hidden md:flex w-full justify-between items-center fixed z-[200] bg-[color:var(--cream-color)] top-0 p-10">
                 <Link to={`/`}>
                     <div className="flex flex-col lg:flex-row lg:gap-2 lg:items-center mb-2">
                         <span className="flex justify-center items-center gap-2">
@@ -36,7 +40,7 @@ const Navbar = () => {
                         ))
                     }
                 </div>
-            </div>
+            </motion.div>
 
             {/* mobile navbar */}
             <div className="w-full flex md:hidden justify-between items-center fixed z-[200] bg-[color:var(--cream-color)] top-0 px-6 pb-3 pt-6">

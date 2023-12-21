@@ -1,34 +1,14 @@
-import { Route, Routes } from 'react-router-dom'
-import LandingPage from './pages/LandingPage'
-import Navbar from './components/global-components/Navbar'
-import ContactPage from './pages/ContactPage'
-import Footer from './components/global-components/Footer'
-import Sidebar from './components/global-components/Sidebar'
-import ResumePage from './pages/ResumePage'
-import ProjectsPage from './pages/ProjectsPage'
-import AllBlogsPage from './pages/AllBlogsPage'
-import SingleBlogPage from './pages/SingleBlogPage'
-import SingleProjectPage from './pages/SingleProjectPage'
+import ScrollToTop from './utils/ScrollToTop'
+import Preloader from './components/global-components/Preloader'
+import AnimatedRoutes from './index/AnimatedRoutes'
 
 function App() {
-
   return (
-    <>
-      <Sidebar />
-      <Navbar />
-      <div className='mt-[123px]'>
-        <Routes>
-          <Route path='/' element={<LandingPage />} />
-          <Route path='/resume' element={<ResumePage />} />
-          <Route path='/projects' element={<ProjectsPage />} />
-          <Route path='/projects/:id' element={<SingleProjectPage />} />
-          <Route path='/contact' element={<ContactPage />} />
-          <Route path='/all-blogs' element={<AllBlogsPage />} />
-          <Route path='/all-blogs/:id' element={<SingleBlogPage />} />
-        </Routes>
-      </div>
-      <Footer />
-    </>
+    <div className='relative'>
+      <Preloader />
+      <ScrollToTop />
+      <AnimatedRoutes />
+    </div>
   )
 }
 
