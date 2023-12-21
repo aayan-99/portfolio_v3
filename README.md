@@ -10,6 +10,7 @@ This is my portfolio showcasing my work, my experience, my skills and some infor
 - **Typescript** 🚀
 - **Recoil** 🚀
 - **Tailwind CSS** 🚀
+- **Framer Motion** 🚀
 
 ## How To Use 🔧
 
