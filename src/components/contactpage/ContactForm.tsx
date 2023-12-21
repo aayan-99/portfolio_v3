@@ -62,7 +62,6 @@ const ContactForm = () => {
                 <textarea name='message' rows={4} className='w-full bg-transparent px-3 py-2 outline-none border-b-2 border-gray-700' />
             </div>
             <div className='w-full flex justify-between mt-8 relative'>
-                {/* <PrimaryButton btnText="CONNECT" /> */}
                 {
                     contactLoader ? (
                         <button className="px-8 py-1.5 rounded-[20px] bg-[color:var(--secondary-color)] text-white active:scale-95 transition-all duration-100 ease-in-out opacity-70" disabled>
