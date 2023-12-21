@@ -1,5 +1,3 @@
-// import { useState } from 'react'
-// import Preloader from '../components/global-components/Preloader'
 import Sidebar from '../components/global-components/Sidebar'
 import Navbar from '../components/global-components/Navbar'
 import ScrollToTop from '../utils/ScrollToTop'
@@ -13,6 +11,7 @@ import AllBlogsPage from '../pages/AllBlogsPage'
 import SingleBlogPage from '../pages/SingleBlogPage'
 import Footer from '../components/global-components/Footer'
 import { AnimatePresence } from 'framer-motion'
+import { Toaster } from 'react-hot-toast'
 
 const AnimatedRoutes = () => {
 
@@ -21,7 +20,6 @@ const AnimatedRoutes = () => {
     return (
         <AnimatePresence mode='sync'>
             <div className='relative'>
-                {/* <Preloader /> */}
                 <Sidebar />
                 <Navbar />
                 <ScrollToTop />
@@ -40,6 +38,7 @@ const AnimatedRoutes = () => {
                     location?.pathname == '/' ? null : (<Footer />)
                 }
             </div>
+            <Toaster />
         </AnimatePresence>
     )
 }
