@@ -12,6 +12,7 @@ import SingleBlogPage from '../pages/SingleBlogPage'
 import Footer from '../components/global-components/Footer'
 import { AnimatePresence } from 'framer-motion'
 import { Toaster } from 'react-hot-toast'
+import Preloader from '../components/global-components/Preloader'
 
 const AnimatedRoutes = () => {
 
@@ -19,6 +20,7 @@ const AnimatedRoutes = () => {
 
     return (
         <AnimatePresence mode='sync'>
+            <Preloader />
             <div className='relative'>
                 <Sidebar />
                 <Navbar />
