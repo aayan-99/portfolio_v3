@@ -31,8 +31,8 @@ const SingleBlogPage = () => {
         <motion.div initial={{ opacity: initial }} animate={{ opacity: animate }} transition={{ duration: transition }} className='relative w-full py-16 md:py-[120px] bg-[color:var(--primary-color)] flex flex-col justify-center items-center mt-20'>
             <BackButton />
             <div className='w-full flex flex-col justify-center items-center gap-6 md:gap-16 px-5 md:px-0'>
-                <span className="flex justify-center items-center gap-2">
-                    <span className="w-4 h-4 mt-[3px] bg-[color:var(--secondary-color)]"></span>
+                <span className="flex justify-center items-center gap-2 lg:mb-[50px] mt-10 md:mt-5">
+                    <span className="hidden 2xl:block w-4 h-4 mt-[3px] bg-[color:var(--secondary-color)]"></span>
                     <h1 className="text-[26px] lg:text-[30px] font-[700] underline">{blogData?.title}</h1>
                 </span>
                 <div className="w-full max-w-[1000px] mt-16">

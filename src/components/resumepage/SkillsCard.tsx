@@ -15,7 +15,7 @@ const SkillsCard: React.FC<SkillsCardProps> = ({ title, skills }) => {
                         skills?.map((skill, i) => (
                             <span key={i} className="flex justify-center items-center gap-2">
                                 <span className="w-4 h-4 mt-[3px] bg-[color:var(--secondary-color)]"></span>
-                                <h1 className="text-[14px] font-[500]">{skill}</h1>
+                                <h1 className="text-[15px] font-[500]">{skill}</h1>
                             </span>
                         ))
                     }

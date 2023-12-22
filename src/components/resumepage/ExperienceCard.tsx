@@ -28,7 +28,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
                 <div className="md:max-w-[70%] flex flex-col gap-3">
                     {
                         work?.map((data, i) => (
-                            <p key={i} className='font-[500] text-[14px]'>{data}</p>
+                            <p key={i} className='font-[500] text-[15px]'>{data}</p>
                         ))
                     }
                 </div>
