@@ -4,13 +4,13 @@ interface BlogCardProps {
     image: string;
     title: string;
     text: string;
-};
+}
 
 const BlogCard: React.FC<BlogCardProps> = ({ image, title, text }) => {
     return (
-        <div className='w-full bg-[color:var(--cream-color)] shadow-xl flex flex-col md:flex-row cursor-pointer h-auto xl:h-[250px]'>
+        <div className='w-full bg-[color:var(--cream-color)] shadow-xl flex flex-col md:flex-row cursor-pointer h-auto xl:h-[250px] rounded-[10px]'>
             <div className='w-full md:w-[50%]'>
-                <img src={image} className='w-full h-full object-cover' alt="" />
+                <img src={image} className='w-full h-full object-cover rounded-t-[10px] md:rounded-r-[0px] md:rounded-l-[10px]' alt="" />
             </div>
             <div className='w-full md:w-[50%] p-4'>
                 <div className='flex flex-col w-fit gap-4'>
