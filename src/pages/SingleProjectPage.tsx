@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom';
-import back from '../assets/icons/back.svg'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom';
 import { projectDetails } from '../mockapi/projectpageapi';
 import { SingleProjectProps } from '../types/projectmodel';
 import { motion } from "framer-motion";
 import { pageTransitions } from '../utils/framerAnimationsConstants';
+import DesktopImageFrame from '../components/projectspage/DesktopImageFrame';
+import MobileImageFrame from '../components/projectspage/MobileImageFrame';
+import BackButton from '../components/global-components/BackButton';
 
 const SingleProjectPage = () => {
-
-    const navigate = useNavigate();
 
     const params = useParams();
 
@@ -53,17 +53,17 @@ const SingleProjectPage = () => {
 
 
     return (
-        <motion.div initial={{ opacity: initial }} animate={{ opacity: animate }} transition={{ duration: transition }}  className='w-full py-16 md:py-[120px] bg-[color:var(--primary-color)] flex flex-col justify-center items-center mt-20'>
-            <div className='w-full flex justify-normal items-center mb-14'>
-                <p className='ml-10'><img src={back} className='w-[30px] cursor-pointer' onClick={() => navigate(-1)} alt="" /></p>
-            </div>
+        <motion.div initial={{ opacity: initial }} animate={{ opacity: animate }} transition={{ duration: transition }} className='relative w-full py-16 md:py-[120px] bg-[color:var(--primary-color)] flex flex-col justify-center items-center mt-20'>
+            <BackButton />
             <div className='w-full flex flex-col justify-center items-center px-5 md:px-0'>
-                <span className="flex justify-center items-center gap-2 mb-[40px] lg:mb-[50px]">
+                <span className="flex justify-center items-center gap-2 lg:mb-[50px] mt-10 md:mt-5">
                     <span className="hidden 2xl:block w-4 h-4 mt-[3px] bg-[color:var(--secondary-color)]"></span>
                     <h1 className="text-[26px] lg:text-[38px] text-center font-[700] underline">{projectData?.title}</h1>
                 </span>
                 <div className="w-full max-w-[80vw] flex flex-col">
-                    <img src={projectData?.image_1} className='w-full my-[30px] md:my-[100px]' alt="" />
+                    <div className='w-fit my-[30px] md:my-[100px]'>
+                        <DesktopImageFrame image={projectData?.image_1} name='Desktop View' />
+                    </div>
                     <div className='w-full flex flex-col mt-10 md:mt-0'>
                         {
                             projectData?.intro?.map((data) => (
@@ -92,7 +92,9 @@ const SingleProjectPage = () => {
                             ))
                         }
                     </div>
-                    <img src={projectData?.image_2} className='w-full my-[30px] mb-[100px] lg:my-[100px]' alt="" />
+                    <div className='w-full my-[30px] mb-[100px] lg:my-[100px]'>
+                        <DesktopImageFrame image={projectData?.image_2} name='Desktop View 2' />
+                    </div>
                     <div className='w-full flex flex-col mb-[30px] md:mb-[60px]'>
                         <h1 className='font-[700] text-[23px] md:text-[30px] mb-3 md:mb-10 underline'>{projectData?.deployment?.title}</h1>
                         {
@@ -117,10 +119,10 @@ const SingleProjectPage = () => {
                         <h1 className='font-[700] text-[23px] md:text-[30px] mb-20 underline'>{projectData?.responsive?.title}</h1>
                         <div className='w-full flex flex-col md:flex-row justify-center gap-10 md:gap-20 mb-20'>
                             {
-                                projectData?.responsive?.content?.map((data, ) => (
-                                    <div key={data?.id} className='w-fit'>
-                                        <img src={data?.image} className='w-fit' alt="" />
-                                    </div>
+                                projectData?.responsive?.content?.map((data,) => (
+                                    <React.Fragment key={data?.id}>
+                                        <MobileImageFrame image={data?.image} name='Mobile & Tab Screens' />
+                                    </React.Fragment>
                                 ))
                             }
                         </div>

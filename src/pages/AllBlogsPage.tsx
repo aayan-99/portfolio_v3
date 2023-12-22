@@ -17,7 +17,7 @@ const AllBlogsPage = () => {
                     <h1 className="text-[26px] lg:text-[30px] font-[700]">Blogs</h1>
                 </span>
             </div>
-            <div className='w-full max-w-[80vw] 2xl:max-w-[60vw] mx-auto flex flex-col lg:grid grid-cols-2 gap-10 lg:gap-[80px] my-14'>
+            <div className='w-full max-w-[80vw] 2xl:max-w-[65vw] mx-auto flex flex-col lg:grid grid-cols-2 gap-10 lg:gap-[80px] my-14'>
                 {
                     allBlogsData?.map((blog) => (
                         <Link key={blog?.id} to={`/all-blogs/${blog?.id}`}>
