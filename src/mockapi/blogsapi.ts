@@ -38,7 +38,7 @@ export const allBlogsData = [
 export const allBlogsDetails = [
   {
     id: '0',
-    title: 'Title: A breif introduction to React Hooks',
+    title: 'A breif introduction to React Hooks',
     content: [
       {
         id: '01',
@@ -280,7 +280,7 @@ export const allBlogsDetails = [
   },
   {
     id: '1',
-    title: `Title: Understanding React's Context API: Simplifying State Management in React Applications`,
+    title: `Understanding React's Context API: Simplifying State Management in React Applications`,
     content: [
       {
         id: '01',
@@ -411,7 +411,7 @@ export const allBlogsDetails = [
   },
   {
     id: '2',
-    title: `Title: Best Practices for Building Scalable and Maintainable Applications`,
+    title: `Best Practices for Building Scalable and Maintainable Applications`,
     content: [
       {
         id: '01',
@@ -522,7 +522,7 @@ export const allBlogsDetails = [
   },
   {
     id: '3',
-    title: `Title: A Brief Dive into Creating Adaptable Interfaces`,
+    title: `A Brief Dive into Creating Adaptable Interfaces`,
     content: [
       {
         id: '01',
