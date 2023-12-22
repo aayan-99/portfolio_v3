@@ -17,7 +17,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
 }) => {
     
     return (
-        <div className="w-full bg-[color:var(--cream-color)] shadow-xl">
+        <div className="w-full bg-[color:var(--cream-color)] shadow-xl rounded-[10px]">
             <div className="flex flex-col md:flex-row items-start p-10 py-14 gap-10 md:gap-16">
                 <div className="flex flex-col w-full md:w-fit min-w-[220px] items-start justify-center">
                     <h1 className="text-[23px] font-[700] text-[color:var(--secondary-color)]">{duration}</h1>

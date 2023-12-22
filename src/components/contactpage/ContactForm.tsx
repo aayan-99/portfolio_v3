@@ -38,33 +38,33 @@ const ContactForm = () => {
     }, [])
 
     return (
-        <form ref={formRef} onSubmit={handleSubmit} className='w-full bg-[color:var(--cream-color)] px-6 md:px-16 py-10 md:py-20 shadow-xl'>
+        <form ref={formRef} onSubmit={handleSubmit} className='w-full bg-[color:var(--cream-color)] px-6 md:px-16 py-10 md:py-20 shadow-xl rounded-[10px]'>
             <div className='w-full flex items-center gap-10 md:gap-20'>
                 <div className='w-full flex flex-col'>
                     <label htmlFor="firstname" className='text-[14px] font-[700]'>First Name <span className='text-[color:var(--secondary-color)] pl-1 text-[20px] font-[500]'>*</span></label>
-                    <input name='firstname' type="text" className='w-full bg-transparent px-3 py-2 outline-none border-b-2 border-gray-700' />
+                    <input name='firstname' type="text" className='w-full bg-transparent px-3 py-2 outline-none border-b-2 border-gray-400' placeholder='' title='firstname' />
                 </div>
                 <div className='w-full flex flex-col'>
                     <label htmlFor="lastname" className='text-[14px] font-[700]'>Last Name <span className='text-[color:var(--secondary-color)] pl-1 text-[20px] font-[500]'>*</span></label>
-                    <input name='lastname' type="text" className='w-full bg-transparent px-3 py-2 outline-none border-b-2 border-gray-700' />
+                    <input name='lastname' type="text" className='w-full bg-transparent px-3 py-2 outline-none border-b-2 border-gray-400' placeholder='' title='lastname' />
                 </div>
             </div>
             <div className='w-full flex flex-col mt-16'>
                 <label htmlFor="email" className='text-[14px] font-[700]'>Email <span className='text-[color:var(--secondary-color)] pl-1 text-[20px] font-[500]'>*</span></label>
-                <input name='email' type="text" className='w-full bg-transparent px-3 py-2 outline-none border-b-2 border-gray-700' />
+                <input name='email' type="text" className='w-full bg-transparent px-3 py-2 outline-none border-b-2 border-gray-400' placeholder='' title='email' />
             </div>
             <div className='w-full flex flex-col mt-16'>
                 <label htmlFor="subject" className='text-[14px] font-[700]'>Subject <span className='text-[color:var(--secondary-color)] pl-1 text-[20px] font-[500]'>*</span></label>
-                <input name='subject' type="text" className='w-full bg-transparent px-3 py-2 outline-none border-b-2 border-gray-700' />
+                <input name='subject' type="text" className='w-full bg-transparent px-3 py-2 outline-none border-b-2 border-gray-400' placeholder='' title='subject' />
             </div>
             <div className='w-full flex flex-col mt-16'>
                 <label htmlFor="message" className='text-[14px] font-[700]'>Message <span className='text-[color:var(--secondary-color)] pl-1 text-[20px] font-[500]'>*</span></label>
-                <textarea name='message' rows={4} className='w-full bg-transparent px-3 py-2 outline-none border-b-2 border-gray-700' />
+                <textarea name='message' rows={4} className='w-full bg-transparent px-3 py-2 outline-none border-b-2 border-gray-400' placeholder='' title='message' />
             </div>
             <div className='w-full flex justify-between mt-8 relative'>
                 {
                     contactLoader ? (
-                        <button className="px-8 py-1.5 rounded-[20px] bg-[color:var(--secondary-color)] text-white active:scale-95 transition-all duration-100 ease-in-out opacity-70" disabled>
+                        <button type='button' className="px-8 py-1.5 rounded-[20px] bg-[color:var(--secondary-color)] text-white active:scale-95 transition-all duration-100 ease-in-out opacity-70" disabled>
                             <div
                                 className="inline-block h-5 w-5 animate-spin rounded-full border-4 border-solid border-current border-r-transparent mt-[2px] mx-4 align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
                                 role="status">

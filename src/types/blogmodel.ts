@@ -1,26 +1,40 @@
 export interface SingleBlogDetailsProps {
     id: string;
     title: string;
-    content: BlogDataText[] | BlogDataCode[] | string;
-};
+    content: (TextContent | ImageContent | CodeContent | PointsContent)[];
+}
 
-interface BlogDataText {
+interface TextContent {
     id: string;
     type: string;
     title: string;
     content: string[];
-};
-
-interface BlogDataCode {
-    id: string;
-    title: string;
-    type: string;
-    content: CodeDataObj[];
 }
 
-interface CodeDataObj {
+interface ImageContent {
+    id: string;
+    type: string;
+    title: string;
+    content: string;
+}
+
+interface CodeContent {
+    id: string;
+    type: string;
+    title: string;
+    content: SingleCodeContent[];
+}
+
+interface SingleCodeContent {
     id: string;
     title: string;
     intro: string;
     content: string[];
-};
+}
+
+interface PointsContent {
+    id: string;
+    type: string;
+    title: string;
+    content: string[];
+}

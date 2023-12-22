@@ -10,7 +10,7 @@ export interface SingleProjectProps {
     deployment: Deployment;
     testing: Testing;
     conclusion: Conclusion;
-};
+}
 
 interface Responsive {
     title: string;
