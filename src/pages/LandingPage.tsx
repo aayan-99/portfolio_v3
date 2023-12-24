@@ -11,17 +11,17 @@ const LandingPage = () => {
     const { greeting, welcomeText, aboutMe, aboutMe_2 } = LandingPageData;
 
     return (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }} className={`flex flex-col md:flex-row md:h-screen pt-16 mt-16 md:mt-0 md:pt-24`}>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }} className={`flex flex-col md:flex-row md:h-screen pt-16 mt-20 md:mt-0 md:pt-24`}>
             <div className="w-full md:w-[40%] h-[30vh] md:h-full md:bg-[color:var(--primary-color)] relative">
                 <div className="block md:hidden w-full max-w-[350px] absolute right-[3%] sm:top-[10%]">
                     <PhotoCard {...photoCardData} />
                 </div>
-                <div className="hidden md:block w-full max-w-[350px] absolute -right-[12%] md:-right-[15%] top-[25%]">
+                <div className="hidden md:block w-full max-w-[350px] absolute -right-[12%] md:-right-[15%] top-[20%]">
                     <PhotoCard {...photoCardData} />
                 </div>
             </div>
             <div className="w-full md:w-[60%] md:h-full flex items-center bg-[color:var(--primary-color)] md:bg-[color:var(--cream-color)] pl-5 md:pl-[100px] lg:pl-[150px] pr-5">
-                <div className="md:max-w-[500px] pt-[140px] pb-10 md:pb-0 px-4 md:px-0 md:pt-0 ">
+                <div className="md:max-w-[500px] pt-[180px] pb-10 md:pb-0 px-4 md:px-0 md:pt-0 ">
                     <h1 className="text-[100px] font-[700]">{greeting}</h1>
                     <h1 className="text-[17px] font-[500] mb-5 md:mb-8 pl-2">{welcomeText}</h1>
                     <div className="w-full md:w-fit flex justify-start gap-6 mb-8">
