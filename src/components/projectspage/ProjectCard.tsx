@@ -29,7 +29,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, name, stack, desc, image 
                     </div>
                 </div>
                 <div className='w-full md:w-[40%] xl:w-[45%]'>
-                    <img src={image} className='w-full h-full aspect-video object-cover object-left rounded-b-[10px] md:rounded-r-[10px] border-l md:border-l-0 border-r md:border-t border-b border-[color:(var--cream-color)]' alt="" />
+                    <img src={image} className='w-full h-full aspect-video object-cover object-left rounded-b-[10px] md:rounded-l-none md:rounded-r-[10px] border-l md:border-l-0 border-r md:border-t border-b border-[color:(var--cream-color)]' alt="" />
                 </div>
             </div>
         </Link>
