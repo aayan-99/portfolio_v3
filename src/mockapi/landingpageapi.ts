@@ -13,9 +13,9 @@ export const photoCardData = {
 export const LandingPageData = {
     greeting: 'Hello',
     welcomeText: 'Have a look around..',
-    aboutMe: `Dynamic and detail-oriented React JS Developer with over 2 years of
+    aboutMe: `Dynamic and detail-oriented Frontend Developer with over 3 years of
     experience in creating innovative and user-centric web applications. Proficient
-    in leveraging React, JavaScript, TypeScript, and various other technologies to
+    in leveraging React, Angular, JavaScript, TypeScript, and various other technologies to
     deliver intuitive user interfaces and streamline complex functionalities.`,
     aboutMe_2: `I design and code beautifully simple things, and I love what I do.`,
 };

@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="w-full relative">
 
             {/* desktop navbar */}
-            <motion.div initial={{ opacity: initial }} animate={{ opacity: animate }} transition={{ duration: transition }} className="hidden md:flex w-full justify-between items-center fixed z-[200] bg-[color:var(--cream-color)] top-0 p-10">
+            <motion.div initial={{ opacity: initial }} animate={{ opacity: animate }} transition={{ duration: transition }} className="hidden md:flex w-full justify-between items-center fixed z-[200] bg-[color:var(--cream-color)] top-0 px-10 py-7">
                 <Link to={`/`}>
                     <div className="flex flex-col lg:flex-row lg:gap-2 lg:items-center mb-2">
                         <span className="flex justify-center items-center gap-2">

@@ -18,6 +18,10 @@ import sriakriti from '../assets/images/projects/sriakriti/sri_akriti.png'
 import sriakriti_2 from '../assets/images/projects/sriakriti/sri_akriti_2.png'
 import sriakriti_tab from '../assets/images/projects/sriakriti/sri_akriti_tab.png'
 import sriakriti_mobile from '../assets/images/projects/sriakriti/sri_akriti_mobile.png'
+import sakurafresh from '../assets/images/projects/sakurafresh/sakurafresh.png'
+import sakurafresh_2 from '../assets/images/projects/sakurafresh/sakurafresh_2.png'
+import sakurafresh_tab from '../assets/images/projects/sakurafresh/sakurafresh_tab.png'
+import sakurafresh_mobile from '../assets/images/projects/sakurafresh/sakurafresh_mobile.png'
 import hrms from '../assets/images/projects/hrms/hrms.png'
 import hrms_2 from '../assets/images/projects/hrms/hrms_2.png'
 import hrms_mobile from '../assets/images/projects/hrms/hrms_mobile.png'
@@ -34,6 +38,14 @@ import alphaoryx_tab from '../assets/images/projects/alphaoryx/alphaoryx_tab.png
 export const projectsData = [
     {
         id: 0,
+        title: 'SakuraFresh',
+        stack: 'React, Javascript, Recoil, TailwinCSS, React Query, etc',
+        desc: `Sakurafresh Beverage and Food is a full-stack manufacturer and blender, offering an extensive range of Alcohol and Zero Alcohol Spirits, Liqueurs, Bitters, Ready-to-Drink Cocktails, and Cocktail Mixers, headquartered in the vibrant city of Yokohama, Japan.`,
+        image: sakurafresh,
+        type: 'client',
+    },
+    {
+        id: 1,
         title: 'Realvedic E-commerce',
         stack: 'React, Javascript, Recoil, TailwinCSS, React Query, Razorpay payments',
         desc: `Realvedic is a wellness-oriented e-commerce platform that harmonizes ancient Ayurvedic principles with modern lifestyle needs. The application platform supports both seller side and buyer side.`,
@@ -41,7 +53,7 @@ export const projectsData = [
         type: 'client',
     },
     {
-        id: 1,
+        id: 2,
         title: 'Sri Akriti Jwellers E-commerce',
         stack: 'React, Javascript, Recoil, TailwinCSS, Razorpay payments',
         desc: `Sri Aakriti Jewels is a renowned Indian jewelry e-commerce brand that offers a wide range of elegant and timeless jewelry pieces. The brand is known for its intricate designs, high-quality materials.`,
@@ -49,7 +61,7 @@ export const projectsData = [
         type: 'client',
     },
     {
-        id: 2,
+        id: 3,
         title: 'HRMS - Eko Infomatics',
         stack: 'React, Typescript, MobX, TailwinCSS',
         desc: `An integrated software solution designed to streamline and automate various HR functions, employee attendence, employee leaves, holidays, recruiting, benefits administration, performance management.`,
@@ -57,7 +69,7 @@ export const projectsData = [
         type: 'client',
     },
     {
-        id: 3,
+        id: 4,
         title: 'Tashwin Trading',
         stack: 'React, Javascript, Recoil, TailwinCSS',
         desc: `Taswin Trading Co. is a company that offers a range of healthy, organic, and plant-based meal options for busy individuals. The company uses high-quality, locally sourced ingredients.`,
@@ -65,7 +77,7 @@ export const projectsData = [
         type: 'client',
     },
     {
-        id: 4,
+        id: 5,
         title: 'NukeMusiX - Music Player Application',
         stack: 'React, Typescript, Recoil, TailwinCSS, shazamcoreApi',
         desc: `NukeMusiX is an interactive software that allows users to play, control, and manage music, use the equalizer, create playlists, discover new generes.`,
@@ -73,7 +85,7 @@ export const projectsData = [
         type: 'personal',
     },
     {
-        id: 5,
+        id: 6,
         title: 'AirBnb clone',
         stack: 'NextJs, Typescript, MobX, TailwinCSS',
         desc: `This airbnb clone is a platform that allows users to list, book, and manage vacation rentals in a similar way to Airbnb.`,
@@ -81,7 +93,7 @@ export const projectsData = [
         type: 'personal',
     },
     {
-        id: 6,
+        id: 7,
         title: 'AlphaOryx - Crypto currency tracker',
         stack: 'React, Javascript, Recoil, TailwinCSS',
         desc: `AlphaOryx is a platform that allows users to monitor the performance of various cryptocurrencies. It provides real-time data on price, market capitalization, trading volume, and other relevant metrics for each cryptocurrency.`,
@@ -89,7 +101,7 @@ export const projectsData = [
         type: 'personal',
     },
     {
-        id: 7,
+        id: 8,
         title: 'Netflix clone',
         stack: 'React, Javascript, Redux, TailwinCSS, Firebase authentication',
         desc: `This is a Netflix clone that allows users to watch trailers, add favoriets, and manage their account via google authentication.`,
@@ -99,9 +111,170 @@ export const projectsData = [
 ];
 
 
-export const projectDetails = [
+export const projectDetails = [    {
+    id: '0',
+    projectname: 'Sakurafresh',
+    title: `Case Study: Sakurafresh - Extensive range of Alcohol and Zero Alcohol Spirits.`,
+    image_1: sakurafresh,
+    image_2: sakurafresh_2,
+    intro: [
+        {
+            id: 'overiew',
+            title: 'Client Overview',
+            content: [
+                `Sakurafresh Beverage and Food is a full-stack manufacturer and blender, offering an extensive range of Alcohol and Zero Alcohol Spirits, Liqueurs, Bitters, Ready-to-Drink Cocktails, and Cocktail Mixers.`,
+            ],
+        },
+        {
+            id: 'introduction',
+            title: 'Technical Introduction to the Project: The Brief',
+            content: [
+                `The project aimed to create an e-commerce platform for Realvedic. It involved the development of a robust, user-centric web application utilizing React.js, Tailwind CSS, Recoil.js, Firebase for authentication, and Razorpay for secure payment processing. The application interconnected with Python/Django-powered APIs from the backend to deliver a seamless and intuitive shopping experience`,
+                `The user-facing application offers a seamless, intuitive experience through a thoughtfully designed frontend, ensuring hassle-free navigation, secure transactions, and personalized account management. Meanwhile, the admin dashboard empowers efficient backend operations with insightful analytics, robust management tools, and content control, aligning with Realvedic's vision of holistic wellness through a harmonious blend of ancient wisdom and cutting-edge technology. Together, these components create a platform that not only prioritizes user experience but also provides administrators with the means to seamlessly manage and optimize the online store, symbolizing Realvedic's commitment to wellness through technological innovation`,
+            ],
+        },
+    ],
+    responsive: {
+        title: 'Device Screens',
+        content: [
+            {
+                id: 'img1',
+                type: 'tab',
+                image: sakurafresh_tab,
+            },
+            {
+                id: 'img2',
+                type: 'mobile',
+                image: sakurafresh_mobile,
+            },
+        ]
+    },
+    execution: {
+        title: 'Execution',
+        content: [
+            {
+                id: 'client',
+                title: 'Client Side',
+                content: [
+                    {
+                        id: 'productListing',
+                        title: 'Product Listing',
+                        content: [
+                            `All Categories' Page: Crafted an immersive page displaying an extensive range of products categorized intuitively. Each product is showcased within visually appealing product cards, featuring a high-resolution imag_1e, variant options, and pricing details. The cards offer a convenient 'Add to Cart' functionality with increasing or decreasing product quantity from cart functionality.`,
+                            `Single Product Details Page: Designed a comprehensive product details page, offering an in-depth view with all imag_1es of the product, detailed descriptions, product ingredients buildup, variant options, pricing breakdowns, and additional product specifications for an informed purchasing decision.`,
+                        ],
+                    },
+                    {
+                        id: 'cart',
+                        title: 'Cart Management',
+                        content: [
+                            `Cart Popup & Management: Implemented a user-friendly cart management system accessible via a responsive cart icon in the navigation bar. The intuitive cart pop-up showcases a comprehensive list of added items, allowing users to modify quantities, remove items, and view subtotal prices seamlessly.`,
+                            `Dedicated Cart Page: Developed a dedicated cart page offering an expanded view of the cart items, providing a more immersive shopping experience. This page mirrors the functionalities of the cart pop-up, facilitating easy modification and removal of items before checkout.`,
+                        ],
+                    },
+                    {
+                        id: 'account',
+                        title: 'User Account Feature',
+                        content: [
+                            `Authentication & Profile Page: Engineered robust user authentication with custom email/password signup securely storing user credentials in the Django backend. Integrated Google Sign-In using Firebase authentication for enhanced user convenience.`,
+                            `User Profile Management: The user account page offers a comprehensive view of user details such as name, email, phone, address, gender, date of birth, empowering users to modify and update their information conveniently.`,
+                        ],
+                    },
+                    {
+                        id: 'checkout',
+                        title: 'Checkout Process',
+                        content: [
+                            `Razorpay Integration: Seamlessly integrated Razorpay for secure payment processing during checkout. This payment gateway offers a frictionless transaction experience, ensuring user trust and satisfaction.`,
+                            `Order Summary and Confirmation: Post-payment completion, the application retrieves and displays order summaries from the backend. This summary includes product names, quantities, prices, total amounts, and order status updates.`,
+                        ],
+                    },
+                    {
+                        id: 'state',
+                        title: 'State Management',
+                        content: [
+                            `Global State Management: Leveraged Recoil.js extensively for efficient global state management across the application. This includes managing cart information, product data across multiple components, UI state toggling, and maintaining consistent application state.`,
+                        ],
+                    },
+                ],
+            },
+            // {
+            //     id: 'admin',
+            //     title: 'Admin Side',
+            //     content: [
+            //         {
+            //             id: 'dashboard',
+            //             title: 'Dashboard Analytics',
+            //             content: [
+            //                 `Comprehensive Dashboard: Features an analytics dashboard offering detailed insights into the platform's performance metrics`,
+            //                 `Revenue Overview: Tracks and displays revenue generated over time, providing insights into sales trends and financial performance.`,
+            //                 `Product Insights: Offers statistics on product performance, top-selling items, and inventory status, aiding in inventory management and marketing strategies.`,
+            //                 `User Metrics: Presents user-related data, such as active users, new user acquisitions, and user engagement, enabling user-centric optimizations.`,
+            //                 `Website Traffic Analysis: Provides traffic analytics, including visitor counts, page views, and traffic sources, aiding in understanding user behavior and optimizing marketing efforts.`,
+            //             ],
+            //         },
+            //         {
+            //             id: 'crud',
+            //             title: 'CRUD Operations for Categories & Products',
+            //             content: [
+            //                 `Category Management: Enables creation, updates, and removal of product categories, facilitating efficient organization of products.`,
+            //                 `Product Management: Provides a suite of tools for managing the product lifecycle, including additions, modifications, and deletions, ensuring an up-to-date and diverse product inventory.`,
+            //             ],
+            //         },
+            //         {
+            //             id: 'orders',
+            //             title: 'Orders Management',
+            //             content: [
+            //                 `Order Tracking: Displays a detailed overview of all orders, allowing admins to track and manage the data in real-time based on progress.`,
+            //                 `Order Updates: Contains a overview of all individual orders, allowing admins to edit, manage, and update delivery statuses in real-time based on progress.`,
+            //             ],
+            //         },
+            //         {
+            //             id: 'user',
+            //             title: 'Users Management',
+            //             content: [
+            //                 `User Data Handling: Empowers admins to oversee and manage user accounts, modify user profiles, delete and block users when necessary, ensuring smooth user interactions and platform security.`,
+            //             ],
+            //         },
+            //         {
+            //             id: 'cms',
+            //             title: 'Content Management',
+            //             content: [
+            //                 `Dynamic Content Control: Allows admins to add, edit, update or delete Product with variants, Categories, Blogs and promotional materials. Provides a dynamic and engaging user interface`,
+            //                 `Dynamic Content Control: Allows admins to curate and control various user-facing content, including homepage banners, category banners, category icons, etc..`,
+            //             ],
+            //         },
+            //         {
+            //             id: 'activity',
+            //             title: 'Activity Logs',
+            //             content: [
+            //                 `Admin Activity Logs: Records and displays logs of admin activities within the system, ensuring transparency, accountability, and a trackable history of modifications.`,
+            //             ],
+            //         },
+            //     ],
+            // },
+        ],
+    },
+    deployment: {
+        title: 'Deployment & Hosting',
+        content: [
+            `Generic Deployment Process: The deployment involved setting up the application on a cloud platform, adhering to industry standards for scalability, security, and reliability. This encompassed creating cloud-based infrastructure and optimizing hosting conditions for optimal performance.`,
+        ],
+    },
+    testing: {
+        title: 'Testing Strategies',
+        content: [
+            `Comprehensive Testing Approach: Employed meticulous test case creation for both front-end components and backend APIs using the React Testing Library. The testing phase rigorously assessed functional integrity, reliability, and cross-device compatibility, ensuring a seamless user experience`,
+        ],
+    },
+    conclusion: {
+        title: 'Conclusion',
+        content: [
+            `Realvedic's e-commerce platform embodies the fusion of ancient wellness philosophies with modern technological advancements, catering to both end-users and administrators. The user-facing application offers a seamless, intuitive experience through a thoughtfully designed frontend, ensuring hassle-free navigation, secure transactions, and personalized account management. Meanwhile, the admin dashboard empowers efficient backend operations with insightful analytics, robust management tools, and content control, aligning with Realvedic's vision of holistic wellness through a harmonious blend of ancient wisdom and cutting-edge technology. Together, these components create a platform that not only prioritizes user experience but also provides administrators with the means to seamlessly manage and optimize the online store, symbolizing Realvedic's commitment to wellness through technological innovation.`,
+        ],
+    },
+},
     {
-        id: '0',
+        id: '1',
         projectname: 'Realvedic',
         title: `Case Study: Realvedic - Harmonizing Ayurvedic Wisdom with Modern E-commerce`,
         image_1: realvedic,
@@ -263,7 +436,7 @@ export const projectDetails = [
         },
     },
     {
-        id: '1',
+        id: '2',
         projectname: 'Sri Akriti',
         title: `Case Study: Sri Akriti Jewellers - Elevating Online Jewelry Shopping Experience`,
         image_1: sriakriti,
@@ -427,7 +600,7 @@ export const projectDetails = [
         },
     },
     {
-        id: '2',
+        id: '3',
         projectname: 'HRMS - Eko Infomatics',
         title: `Case Study: HRMS - Eko Infomatics - Streamlining Workforce Management`,
         image_1: hrms,
@@ -562,7 +735,7 @@ export const projectDetails = [
         },
     },
     {
-        id: '3',
+        id: '4',
         projectname: 'Taswin Trading Co',
         title: `Case Study: Taswin Trading Co. - Nurturing Health Through Organic Options`,
         image_1: taswin,
@@ -672,7 +845,7 @@ export const projectDetails = [
         },
     },
     {
-        id: '4',
+        id: '5',
         projectname: 'NukeMusiX',
         title: `Case Study: NukeMusiX - Redefining Music Listening Experience`,
         image_1: nukemusix,
@@ -772,7 +945,7 @@ export const projectDetails = [
         },
     },
     {
-        id: '5',
+        id: '6',
         projectname: 'AirBnb Clone',
         title: `Title: Elevating Vacation Rental Experience - The Airbnb Clone Story`,
         image_1: airbnb,
@@ -864,7 +1037,7 @@ export const projectDetails = [
         },
     },
     {
-        id: '6',
+        id: '7',
         projectname: 'AlphaOryx',
         title: `Title: Navigating the Crypto Landscape - A Revolutionary Crypto Currency Tracker`,
         image_1: alphaoryx,
@@ -963,7 +1136,7 @@ export const projectDetails = [
         },
     },
     {
-        id: '7',
+        id: '8',
         projectname: 'Netflix Clone',
         title: `Title: Redefining Streaming Experience - The Netflix Clone Endeavor`,
         image_1: netflix,

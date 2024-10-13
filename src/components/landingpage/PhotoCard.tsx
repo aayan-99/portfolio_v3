@@ -18,7 +18,7 @@ const PhotoCard: React.FC<PhotoCardProps> = ({ picture, firstName, lastName, job
     return (
         <div className="w-full bg-[color:var(--photo-color)] flex flex-col justify-center items-center gap-5 md:gap-10 pt-10 md:pt-14 shadow-lg md:shadow-2xl rounded-[10px]">
             <div className="bg-gray-300 rounded-full h-[160px] w-[160px]">
-                <img src={picture} className='w-full rounded-full' alt="" />
+                <img src={picture} className='w-full rounded-full aspect-square object-cover' alt="" />
             </div>
             <h1 className="text-[28px] font-[700] flex flex-col leading-none text-center"><span>{firstName}</span> <span>{lastName}</span></h1>
             <div className="h-1 w-[50px] rounded-full mx-auto bg-[color:var(--secondary-color)]"></div>
